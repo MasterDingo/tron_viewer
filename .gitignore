@@ -5,3 +5,6 @@
 **/.mypy_cache
 **/*.sqlite3
 app/tests
+.env.prod
+ssl/certs/*
+ssl/private/*
