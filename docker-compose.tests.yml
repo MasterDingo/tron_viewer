@@ -1,0 +1,13 @@
+services:
+    dev:
+        build:
+            context: .
+            dockerfile: ./tests/Dockerfile.tests
+        command: pytest .
+        volumes:
+            - ./app:/usr/src
+            - ./tests:/usr/src/tests
+        ports:
+            - 8000:8000
+        env_file:
+            - tests/.env.tests
