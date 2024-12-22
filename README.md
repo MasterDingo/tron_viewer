@@ -2,7 +2,7 @@
 Just an example of working with Tronpy + FastAPI
 
 Use `docker compose build` to build the development environment and `docker compose up` to run it.
-The API is accessible at http://localhost:8000. Use POST request to fetch data from TRON network and GET request to get the history of previous POST requests.
+The API documentation would be available at http://localhost:8000/docs. Use `POST /tron` request to fetch data from TRON network and `GET /tron` to get the history of previous POST requests.
 When fetching the data, the request body must contain valid JSON data: `{"address": "<TRON address>"}`
 Use `docker compose -f docker-compose.tests.yml build` to build the test environment and then `docker compose -f docker-compose.tests.yml up` to run tests.
 Production environment is available after `docker compose build` && `docker compose up`.
